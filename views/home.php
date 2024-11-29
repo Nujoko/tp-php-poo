@@ -6,10 +6,12 @@ ob_start();
   <section class="main-sections">
     <article class="main-articles">
       <h1 class="main-articles-title">
-        Bienvenue sur Blog Voyage
+      🎰 Bienvenue sur la Machine à Sous Virtuelle !
       </h1>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero laborum id quam illum cum deleniti velit obcaecati possimus blanditiis repellendus, earum quae, perspiciatis corrupti eius dolores laudantium deserunt quaerat. Qui cumque vero voluptas quae nihil dolorem dignissimos ratione itaque eum, debitis nobis sit provident dolore necessitatibus veritatis impedit ea perferendis?
+          Plongez dans l'univers excitant des machines à sous et tentez votre chance pour remporter des gains incroyables !
+        Alignez les symboles chanceux 🍒💎⭐ et découvrez si la fortune est de votre côté. Cliquez sur le bouton Spin pour 
+        démarrer le jeu et laissez le hasard décider de votre sort. 🎲✨ Bonne chance 
       </p>
     </article>
   </section>

@@ -29,6 +29,8 @@ use Controllers\ErrorsController;
 use Controllers\ArticlesController;
 use Controllers\BlogController;
 
+use Controllers\SlotMachineController;
+
 $article = new Article(BDD::connect());
 
 $article_test = [
@@ -73,6 +75,16 @@ switch (true) {
   case ($uri === "/"):
     $router->get("/", BlogController::index());
     break;
+
+
+  case (str_contains($uri, "/slot-machine")): 
+      $router->get("/slot-machine", SlotMachineController::index());
+      exit;
+   case (str_contains($uri, "/play")): 
+      $router->get("/play", SlotMachineController::play());
+      exit;
+    break;
+  
   case (str_contains($uri, "/articles")):
     if ($idParam && !str_contains($uri, "/update")) {
       $router->get("/articles/$idParam", ArticlesController::getById($idParam));
@@ -90,7 +102,6 @@ switch (true) {
       $router->post("/articles/delete", ArticlesController::deleteArticle());
       exit;
     }
-
     $router->get("/articles", ArticlesController::getList());
     break;
   default:
